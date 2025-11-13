@@ -88,6 +88,7 @@ Print Services, and Backup Solutions to support business continuity.
 - Navigate to **Server Manager** from the **Start Menu** ➝  
   On the top right, click **Manage** ➝ **Add roles and features**
 ![Screenshot](images/screenshot05.jpg)
+
 **Before you begin:**
 1. Open **Server Manager**.
 2. Click **Next**.
@@ -96,6 +97,8 @@ Print Services, and Backup Solutions to support business continuity.
 5. Click on **Active Directory Domain Services**.
 6. Click **Add Features**.
 7. Click **Next**, then **Install** (wait for it to succeed).
+<img width="1018" height="856" alt="image" src="https://github.com/user-attachments/assets/b9faffc8-0240-4dcc-a1a9-dee6e92937ad" />
+
 8. Click **Promote this server to a domain controller**.
 9. Select **Add a new forest**.
 10. Enter the **Root domain name** (e.g., `Njikason.com`).
