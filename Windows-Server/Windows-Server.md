@@ -48,7 +48,7 @@ Print Services, and Backup Solutions to support business continuity.
    - Download VMware Workstation Pro on the official website (Browser)
      *(32 or 64bit depending on your computer)*  
    - **Download Windows Server 2022 ISO file** *(Free trial 180 days)*
-![Screenshot](images/screenshot02.jpg)
+
 ---
 
 2. **Open your Workstation and click on Create a New Virtual Machine**
@@ -68,7 +68,7 @@ Print Services, and Backup Solutions to support business continuity.
   *(Windows Server 2022 Standard Evaluation - Desktop Experience)* ➝ **Next** ➝ Accept terms & conditions ➝  
   Custom: Install Microsoft Server operating system only ➝  
   Installing Microsoft Server operating system...
-![Screenshot](images/screenshot03.jpg)
+
 ### After Installing
 - **Username**: administrator *(only default)*
 - **Password**:  
@@ -81,8 +81,20 @@ Print Services, and Backup Solutions to support business continuity.
   Computer Name tab ➝ Click **Change** ➝ Enter new computer name *(e.g., Server2022)* ➝  
   Click **OK** (it will prompt to restart the machine) ➝  
   **Restart Now**
-![Screenshot](images/screenshot04.jpg)
----
+
+## **Option 2**
+- Navigate to **Server Manager** ➝  
+  Click on the Left pannel   **Local Server** ➝ **Click on Computer Name** ➝  
+  Click **Change** ➝ Enter new computer name *(e.g., Server2022)* ➝  
+  Click **OK** (it will prompt to restart the machine) ➝  
+  **Restart Now**
+
+  <img width="1027" height="845" alt="image" src="https://github.com/user-attachments/assets/5ecc2564-f31e-4af6-a082-ec8e6e8a05ae" />
+
+  <img width="1030" height="864" alt="image" src="https://github.com/user-attachments/assets/2367cbda-c3af-4b9b-950c-742b3c1b73d6" />
+
+
+  ---
 ### 4. Create Active Directory Domain Services
 
 - Navigate to **Server Manager** from the **Start Menu** ➝  
@@ -129,19 +141,19 @@ By clicking on **View script** you can aslo execute script command in powershell
 5. Right-click **Ethernet** > Select **Properties**.
 6. Click on **Internet Protocol Version 4 (TCP/IPv4)**.
 7. Select **Use the following IP address** and configure the static IP.
-![Screenshot](images/screenshot59.jpg)
+
 > In a **corporate environment**, Windows Server usually has a **static IP address**.
 ---
 ## whoami command
 
 - Displays the fully qualified Domain Name (Fqdn) of the currently logged- in user, includes domain hierarchy in the output.
 - whoami /fqdn
-![Screenshot](images/screenshot537.jpg)
+
 
 ## VM Network Configuration
 
 - Change the **virtual machine network** from **NAT** to **Host-only** so that the **VM** can talk to each other on the same network.
-![Screenshot](images/screenshot06.jpg)
+
 
 ---
 ## Adding a Computer to a Domain (Windows) rules
@@ -150,17 +162,17 @@ By clicking on **View script** you can aslo execute script command in powershell
 
 * If it's a new install, for home lab (Renaming the PC will be easy to remember the Computer)  
 Click on the Active File Explorer → Properties → change Settings → Computer name → Rename the Computer → Restart the Computer
-![Screenshot](images/screenshot60.jpg)
+
 
 ---
 
 * Navigate to your Control panel → Search & type Control Panel → View network status & tasks → change adapter
 Settings → Ethernet → Properties → Disable IPv6 → Click on (TCP/IPv4) → Use the following IP address and click ok  
 Use ping command to try and reach your Windows Server
-![Screenshot](images/screenshot61.jpg)
+
 
 **pinging the server**
-![Screenshot](images/screenshot62.jpg)
+
 
 ---
 # Now join the Computer to the Domain  
@@ -168,13 +180,13 @@ Use ping command to try and reach your Windows Server
 Click on the File Explorer → Right click on This PC → Properties → Domain or Workgroup (Win 11) → Advance Settings (Win10) → member of Domain  
 administrator *username* (capitalp123) and password  
 The Computer has been joined to the domain
-![Screenshot](images/screenshot64.jpg)
+
 
 ---
 
 * Logged in with the account (username) I created on Active Directory and now I can manage this account, reset password, disable account & apply group policies to the Computer.
 
-![Screenshot](images/screenshot63.jpg)
+
 
 # Shared Drive Permissions & User Account Creation
 ---
